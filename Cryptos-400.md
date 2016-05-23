@@ -23,4 +23,51 @@ and get
 
     pbbxdubmfeqdlevyflmgqykdxduqycxbmvcmgbvvpgufrbmgexmzqmtauexjmmlwmaycijymiybijxeexduabvixwmhumqlovquutkvjfsgxzukuumqhyuzsealovlmixsylbvxtlsidytbloqcygkhuzgdfrtynpfehnomsoextrgafjkxwmphhzqcnluvxbwkhsejxmvbvvwdxlctbbxgjwwnkbbicdlshsvxvyztnzcuuyqylcmhfnhvprvwryfgfkpxmygxptmpnpfehnxtfuuthylspfqumssfgbnxtjvkxbmmdbmeqdlaxbtlovtxxdqbyjvkxbmmdbmexdqacmblvloyhnydqcygkhwwwdmqqb
 
-I'll admit, the "my own" part of the hint had me triggered for a good 3 days, since we had to guess not only the type of encryption used, but also the key.  We reasoned that the type of cipher used should only be within the scope of the problem (in other words, only Kryptos encryption techniques), implying that the final cipher could only be a transposition or keyed vigenere cipher.  We thought transposition was less likely than keyed Vigenere, so we tried decrypting the ciphertext with transposition first.  Yielding no english text, we quickly eliminated that option.  
+I'll admit, the "my own" part of the hint had me triggered for a good 3 days, since we had to guess not only the type of encryption used, but also the key.  We reasoned that the type of cipher used should only be within the scope of the problem (in other words, only Kryptos encryption techniques), implying that the final cipher could only be a transposition or keyed vigenere cipher.  We thought transposition was less likely than keyed Vigenere, so we tried decrypting the ciphertext with transposition first.  Yielding no english text, we quickly eliminated that option.  So it is good ol' Vigenere all over again.  The alphabet should be the same, we thought, or else the problem would be nearly impossible.  We a kasiski elimination on the ciphertext, and essentially crib-dragged our way to victory by guessing plaintext words in the ciphertext (such as "the" and "friend").  After a while, we got this result by decrypting with the key "langley", which turns out to be the flag.
+
+    friendsromanscountrymenlendmeyourearsicometoburycaesarnottopraisehimtheevilthatmendolivesafterthemthegoodisoftinterredwiththeirbonessoletitbewithcaesarthenoblebrutushathtoldyoucaesarwasambitiousifitweresoitwasagrievousfaultandgrievouslyhathcaesaranswerdithereunderleaveofbrutusandtherestforbrutusisanhonourablemansoaretheyallallhonourablemencomeitospeakincaesarsfuneral
+    
+##Flag 
+
+        friendsromanscountrymenlendmeyourearsicometoburycaesarnottopraisehimtheevilthatmendolivesafterthemthegoodisoftinterredwiththeirbonessoletitbewithcaesarthenoblebrutushathtoldyoucaesarwasambitiousifitweresoitwasagrievousfaultandgrievouslyhathcaesaranswerdithereunderleaveofbrutusandtherestforbrutusisanhonourablemansoaretheyallallhonourablemencomeitospeakincaesarsfuneral
+
+Now that feels good man.
+
+
+_______████████__██████
+_________█░░░░░░░░██_██░░░░░░█
+________█░░░░░░░░░░░█░░░░░░░░░█
+_______█░░░░░░░███░░░█░░░░░░░░░█
+_______█░░░░███░░░███░█░░░████░█
+______█░░░██░░░░░░░░███░██░░░░██
+_____█░░░░░░░░░░░░░░░░░█░░░░░░░░███
+____█░░░░░░░░░░░░░██████░░░░░████░░█
+____█░░░░░░░░░█████░░░████░░██░░██░░█
+___██░░░░░░░███░░░░░░░░░░█░░░░░░░░███
+__█░░░░░░░░░░░░░░█████████░░█████████
+█░░░░░░░░░░█████_████████_█████_█
+█░░░░░░░░░░█___█_████___███_█_█
+█░░░░░░░░░░░░█_████_████__██_██████
+░░░░░░░░░░░░░█████████░░░████████░░░█
+░░░░░░░░░░░░░░░░█░░░░░█░░░░░░░░░░░░█
+░░░░░░░░░░░░░░░░░░░░██░░░░█░░░░░░██
+░░░░░░░░░░░░░░░░░░██░░░░░░░███████
+░░░░░░░░░░░░░░░░██░░░░░░░░░░█░░░░░█
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█
+░░░░░░░░░░░█████████░░░░░░░░░░░░░░██
+░░░░░░░░░░█▒▒▒▒▒▒▒▒███████████████▒▒█
+░░░░░░░░░█▒▒███████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
+░░░░░░░░░█▒▒▒▒▒▒▒▒▒█████████████████
+░░░░░░░░░░████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
+░░░░░░░░░░░░░░░░░░██████████████████
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█
+██░░░░░░░░░░░░░░░░░░░░░░░░░░░██
+▓██░░░░░░░░░░░░░░░░░░░░░░░░██
+▓▓▓███░░░░░░░░░░░░░░░░░░░░█
+▓▓▓▓▓▓███░░░░░░░░░░░░░░░██
+▓▓▓▓▓▓▓▓▓███████████████▓▓█
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█
