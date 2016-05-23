@@ -29,7 +29,7 @@ I'll admit, the "my own" part of the hint had me triggered for a good 3 days, si
     
 ##Flag 
 
-        friendsromanscountrymenlendmeyourearsicometoburycaesarnottopraisehimtheevilthatmendolivesafterthemthegoodisoftinterredwiththeirbonessoletitbewithcaesarthenoblebrutushathtoldyoucaesarwasambitiousifitweresoitwasagrievousfaultandgrievouslyhathcaesaranswerdithereunderleaveofbrutusandtherestforbrutusisanhonourablemansoaretheyallallhonourablemencomeitospeakincaesarsfuneral
+    friendsromanscountrymenlendmeyourearsicometoburycaesarnottopraisehimtheevilthatmendolivesafterthemthegoodisoftinterredwiththeirbonessoletitbewithcaesarthenoblebrutushathtoldyoucaesarwasambitiousifitweresoitwasagrievousfaultandgrievouslyhathcaesaranswerdithereunderleaveofbrutusandtherestforbrutusisanhonourablemansoaretheyallallhonourablemencomeitospeakincaesarsfuneral
 
 Now that feels good man.
 
@@ -71,3 +71,5 @@ __█░░░░░░░░░░░░░░█████████░░
 ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██
 ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█
 ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█
+
+(That's supposed to be a Pepe, but rip formatting)
