@@ -1,14 +1,14 @@
-#Cryptos - 400
+# Cryptos - 400
 Problem writer: <b>Jakob Degen</b>
 
 Oops! Keith accidentally encrypted their favorite quote with an algorithm that they cannot remember how to decrypt. Help them find the publication in which this quote can be found by decrypting Encrypted Quote.mov.
 
 Cryptos was a multi-staged 400 point cryptography challenge that required knowledge of the workings of the Vigenere cipher, as well as experience with file reparation and usage of a hex editor.
 
-##Overview
+## Overview
 Figure out the true file extension for "Encrypted Quote.mov", repair corrupted file, find useful information in "Encrypted Quote.mov" hex data, perform cryptanalysis on custom alphabet Vigenere ciphers (Kryptos 1 and 2)
 
-##Solution
+## Solution
 We first open up "Encrypted Quote.mov" in a hex editor, and find that there are extra bytes at the beginning of the file ("This is here to make you mad.").  We delete those bytes, and find what appears to be a PDF header ("%PDF").  Upon scrolling down further, we also find a hyperlink to https://en.wikipedia.org/wiki/Kryptos. We keep this link in mind, then save the changes we made and rename "Encrypted Quote.mov to Encrypted Quote.pdf".  This should produce a fully functional pdf right?  Nope - It's corrupted (Thanks a lot Keith?)  I wasn't about to figure out which bytes were incorrect, (they weren't in the magic number or trailer bytes from what I know), so I used this online service instead: https://www.pdf-online.com/osa/repair.aspx
 
 Voila - it successfully repairs the pdf! (Albeit with a watermark).   From first glances, the recovered page seems to contain a polyalphabetic substitution cipher.
@@ -27,49 +27,8 @@ I'll admit, the "my own" part of the hint had me triggered for a good 3 days, si
 
     friendsromanscountrymenlendmeyourearsicometoburycaesarnottopraisehimtheevilthatmendolivesafterthemthegoodisoftinterredwiththeirbonessoletitbewithcaesarthenoblebrutushathtoldyoucaesarwasambitiousifitweresoitwasagrievousfaultandgrievouslyhathcaesaranswerdithereunderleaveofbrutusandtherestforbrutusisanhonourablemansoaretheyallallhonourablemencomeitospeakincaesarsfuneral
     
-##Flag 
+## Flag 
 
     friendsromanscountrymenlendmeyourearsicometoburycaesarnottopraisehimtheevilthatmendolivesafterthemthegoodisoftinterredwiththeirbonessoletitbewithcaesarthenoblebrutushathtoldyoucaesarwasambitiousifitweresoitwasagrievousfaultandgrievouslyhathcaesaranswerdithereunderleaveofbrutusandtherestforbrutusisanhonourablemansoaretheyallallhonourablemencomeitospeakincaesarsfuneral
 
-Now that feels good man.
 
-
-    _______████████__██████
-    _________█░░░░░░░░██_██░░░░░░█
-    ________█░░░░░░░░░░░█░░░░░░░░░█
-    _______█░░░░░░░███░░░█░░░░░░░░░█
-    _______█░░░░███░░░███░█░░░████░█
-    ______█░░░██░░░░░░░░███░██░░░░██
-    _____█░░░░░░░░░░░░░░░░░█░░░░░░░░███
-    ____█░░░░░░░░░░░░░██████░░░░░████░░█
-    ____█░░░░░░░░░█████░░░████░░██░░██░░█
-    ___██░░░░░░░███░░░░░░░░░░█░░░░░░░░███
-    __█░░░░░░░░░░░░░░█████████░░█████████
-    █░░░░░░░░░░█████_████████_█████_█
-    █░░░░░░░░░░█___█_████___███_█_█
-    █░░░░░░░░░░░░█_████_████__██_██████
-    ░░░░░░░░░░░░░█████████░░░████████░░░█
-    ░░░░░░░░░░░░░░░░█░░░░░█░░░░░░░░░░░░█
-    ░░░░░░░░░░░░░░░░░░░░██░░░░█░░░░░░██
-    ░░░░░░░░░░░░░░░░░░██░░░░░░░███████
-    ░░░░░░░░░░░░░░░░██░░░░░░░░░░█░░░░░█
-    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█
-    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█
-    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█
-    ░░░░░░░░░░░█████████░░░░░░░░░░░░░░██
-    ░░░░░░░░░░█▒▒▒▒▒▒▒▒███████████████▒▒█
-    ░░░░░░░░░█▒▒███████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
-    ░░░░░░░░░█▒▒▒▒▒▒▒▒▒█████████████████
-    ░░░░░░░░░░████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
-    ░░░░░░░░░░░░░░░░░░██████████████████
-    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█
-    ██░░░░░░░░░░░░░░░░░░░░░░░░░░░██
-    ▓██░░░░░░░░░░░░░░░░░░░░░░░░██
-    ▓▓▓███░░░░░░░░░░░░░░░░░░░░█
-    ▓▓▓▓▓▓███░░░░░░░░░░░░░░░██
-    ▓▓▓▓▓▓▓▓▓███████████████▓▓█
-    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██
-    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█
-    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█
-
-(That's supposed to be a Pepe, but rip formatting)
